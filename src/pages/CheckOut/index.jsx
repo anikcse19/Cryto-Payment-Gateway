@@ -130,7 +130,7 @@ const CheckOut = () => {
             <div className="flex flex-col gap-y-3">
               {coinInfo.map((coin) => (
                 <div
-                  className="rounded-full p-2 border border-gray-500 flex justify-between items-center cursor-pointer"
+                  className="rounded-full p-2 border border-gray-500 flex justify-between items-center cursor-pointer hover:border-2 hover:border-[#2BCBD7] group"
                   key={coin.id}
                   onClick={() => {
                     navigate(`/payment/${coin.symbol}`);
@@ -148,7 +148,7 @@ const CheckOut = () => {
                       {coin.name}
                     </p>
                   </div>
-                  <div className="pr-2 w-10 text-sm self-start text-left font-medium text-slate-600">
+                  <div className="pr-2 w-10 text-sm self-start text-left font-medium text-slate-600 group-hover:text-[#2BCBD7]">
                     {coin?.symbol}
                   </div>
                 </div>
